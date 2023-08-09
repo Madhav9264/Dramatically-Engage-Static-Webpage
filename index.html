@@ -1,0 +1,375 @@
+<html>
+
+<head>
+    <title>Project</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-image: url(./images/nature.jpeg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0rem;
+        }
+
+        #D1 {
+            position: absolute;
+            top: 0%;
+            height: 100%;
+        }
+
+        #nav {
+            position: fixed;
+            background-color: black;
+            width: 100%;
+            letter-spacing: 0.125rem;
+            color: white;
+            z-index: 1;
+        }
+
+        #S1 {
+            padding-left: 8%;
+            letter-spacing: 0.938rem;
+            font-size: 1.25rem;
+        }
+
+        #Lo {
+            border: 0.125rem white solid;
+            border-radius: 1.25rem;
+            height: 1.563rem;
+            width: 1.563rem;
+            position: relative;
+            top: 0.625rem;
+            background-color: white;
+        }
+
+        #u1 {
+            display: inline-block;
+            position: relative;
+            left: 50%;
+        }
+
+        li {
+
+            display: inline-block;
+            padding-right: 1.563rem;
+        }
+
+        #u2 {
+            display: none;
+            position: absolute;
+            top: 2.188rem;
+            left: 45%;
+        }
+
+        .n {
+            border: 0.063rem white solid;
+            height: 3.75rem;
+            text-align: center;
+        }
+
+        .NV {
+            border: 0.125rem solid black;
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .N:hover {
+            background-color: yellowgreen;
+            color: white;
+        }
+
+        #SH:hover+#u2 {
+            display: block;
+            color: darkgreen;
+        }
+
+        #D {
+            color: white;
+            font-size: 4.688rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute;
+            left: 25%;
+            top: 25%;
+        }
+
+        #DP {
+            color: white;
+            font-size: 0.938rem;
+            position: relative;
+            left: 3.438rem;
+            top: 1.25rem;
+        }
+
+        #En {
+            position: relative;
+            top: 5rem;
+            left: 40%;
+            border: 0.125rem solid lime;
+            background-color: lime;
+            padding: 0.938rem;
+            border-radius: 2.5rem;
+            font-size: 0.75rem;
+        }
+
+        #En:hover {
+            padding: 1.25rem;
+            border-radius: 3.125rem;
+            font-size: 0.938rem;
+        }
+
+        #D2 {
+            background-color: lime;
+            position: relative;
+            top: 101%;
+            height: 39%;
+            text-align: center;
+        }
+
+        #APP {
+            position: relative;
+            top: 25%;
+        }
+
+        #p1 {
+            color: white;
+            font-size: 1.875rem;
+            position: relative;
+            top: 35%;
+        }
+
+        #P2 {
+            color: white;
+            font-size: 0.938rem;
+            position: relative;
+            top: 42%;
+        }
+
+        #D3 {
+            background-color: white;
+            position: absolute;
+            top: 140%;
+            height: 100%;
+        }
+
+        #mic {
+            border: 0.125rem solid white;
+            border-radius: 50%;
+            height: 37.5rem;
+            width: 37.5rem;
+        }
+
+        #BC {
+            font-size: 3.125rem;
+            position: relative;
+            top: -12.5rem;
+        }
+
+        #BD {
+            position: relative;
+            top: -11.25rem;
+            font-size: 1.25rem;
+            padding-bottom: 1.25rem;
+        }
+
+        #CI {
+            position: relative;
+            top: -7.5rem;
+            border: 0.125rem solid lime;
+            background-color: lime;
+            padding: 0.938rem;
+            border-radius: 2.5rem;
+            font-size: 0.75rem;
+        }
+
+        #CI:hover {
+            padding: 1.25rem;
+            border-radius: 3.125rem;
+            font-size: 0.938rem;
+        }
+
+        #D4 {
+            background-color: black;
+            position: relative;
+            top: 200%;
+            height: 100%;
+        }
+
+        #CB {
+            font-size: 3.125rem;
+            position: relative;
+            top: -12.5rem;
+            color: white;
+        }
+
+        #DB {
+            position: relative;
+            top: -11.25rem;
+            font-size: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: white;
+        }
+
+        #TI {
+            position: relative;
+            top: -7.5rem;
+            border: 0.125rem solid black;
+            color: white;
+            padding: 0.938rem;
+            border-radius: 2.5rem;
+            font-size: 0.75rem;
+        }
+
+        #TI:hover {
+            background-color: white;
+            color: black;
+            /* padding: 20px; */
+            border-radius: 3.125rem;
+            /* font-size: 15px; */
+        }
+
+        #D5 {
+            position: relative;
+            top: 200%;
+            height: 50%;
+            background-color: white;
+            text-align: center;
+        }
+
+        #SC {
+            font-size: 3.125rem;
+            position: relative;
+            top: 3.75rem;
+        }
+
+        #SDC {
+            font-size: 1.25rem;
+            position: relative;
+            top: 5.625rem;
+        }
+
+        #CN {
+            position: relative;
+            top: 9.75rem;
+            ;
+            border: 0.125rem solid lime;
+            background-color: lime;
+            padding: 0.938rem;
+            border-radius: 2.5rem;
+            font-size: 0.75rem;
+        }
+
+        #CN:hover {
+            padding: 1.25rem;
+            border-radius: 3.125rem;
+            font-size: 0.938rem;
+        }
+
+        #D6 {
+            position: relative;
+            top: 200%;
+            height: 50%;
+            background-color: lime;
+            color: white;
+            text-align: center;
+            font-size: 1.875rem;
+            padding-top: 3.125rem;
+        }
+
+        #IF1 {
+            position: absolute;
+            top: 6.25rem;
+            left: 1.875rem;
+        }
+
+        #MP {
+            position: absolute;
+            top: 6.25rem;
+            right: 1.875rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="D1">
+        <nav id="nav">
+            <span id="S1"><img id="Lo" src="./images/fire.png"> LOGO</span>
+            <ul id="u1">
+                <li><a class="N" href="#D1">Home</a></li>
+                <li><a class="N" href="#D2">Products</a></li>
+                <li><a class="N" href="#D4" id="SH">Services</a>
+                    <div id="u2">
+                        <ul>
+                            <li><a class="NV" href="">Link 1</a></li>
+                            <li><a class="NV" href="">Link 2</a></li>
+                            <li><a class="NV" href="">Link 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="N" href="#D5">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <p id="D">Dramatically Engage<br>
+        <span id="DP">Objectively innovate empowered manufactured products where as parallel platform</span><br>
+        <span><a id="En" href="#">ENGAGE NOW</a></span>
+    </p>
+    <div id="D2">
+        <img id="APP" src="./svg/apple.svg" height="60px" width="50px"><br>
+        <span id="P1">Completely synergize resourse taxing relationships</span><br>
+        <span id="P2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos tenetur eveniet eaque
+            voluptatibus esse, architecto rem laboriosam amet!<br>Minus commodi quae molestias dicta unde qui officia,
+            expedita amet vitae illo.</span>
+    </div>
+    <div id="D3">
+        <table cellspacing="40px" cellpadding="40px">
+            <tr>
+                <td><img id="mic" src="./images/mic.jpeg"></td>
+                <td><span id="BC">Best in class</span><br> <span id="BD"> ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit autem ad est reiciendis assumenda deserunt quae, quo nesciunt eius ab porro dicta
+                        fugiat iure quidem minima veniam unde perferendis atque ea tempore facilis sunt eligendi. Cumque
+                        esse architecto perferendis ea non sint odit eaque minus unde. Aliquam laudantium cum
+                        eius!</span><br><span><a id="CI" href="#">CLASSIFY IT</a></span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="D4">
+        <table cellspacing="40px" cellpadding="40px">
+            <tr>
+                <td><span id="CB">Best in class</span><br> <span id="DB"> ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit autem ad est reiciendis assumenda deserunt quae, quo nesciunt eius ab porro dicta
+                        fugiat iure quidem minima veniam unde perferendis atque ea tempore facilis sunt eligendi. Cumque
+                        esse architecto perferendis ea non sint odit eaque minus unde. Aliquam laudantium cum
+                        eius!</span><br><span><a id="TI" href="#"> TEST IT </a></span></td>
+                <td><img id="mic" src="./images/handphone.jpeg"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="D5">
+        <span id="SC">Sanity check</span><br><span id="SDC">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsam repellendus similique aliquam magnam quibusdam <br>impedit corrupti alias libero architecto illo sed,
+            laudantium laboriosam doloribus<br> dolorem magni maxime maiores consequuntur placeat.</span><br><span><a
+                id="CN" href="#"> CHECK NOW </a></span>
+    </div>
+    <div id="D6">
+        <iframe id="IF1" width="315" height="215" src="https://www.youtube.com/embed/XMtVZJughfw?autoplay=1&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        CONTACT US:<br><img src="./svg/call.svg" height="60px"
+            width="50px"><br>9922789264<br><span><img src="./svg/email.svg" height="60px"
+                width="50px"></span><br><a href="mailto:madhavgodalemg@gmail.com"
+            target="blank">madhavgodalemg@gmail.com</a>
+        <iframe id="MP"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60539.197353974654!2d73.90439926167598!3d18.49725078006415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e9ff81f1aae9%3A0x2560343555ac8b53!2sHadapsar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1633187092577!5m2!1sen!2sin"
+            width="315" height="215" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</body>
+
+</html>
